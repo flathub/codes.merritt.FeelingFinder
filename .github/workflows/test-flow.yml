@@ -1,0 +1,16 @@
+name: Test flow
+
+on:
+  # Enable manual run
+  workflow_dispatch:
+  # Build & deploy for published releases
+  release:
+    types:
+      - published
+
+jobs:
+  testit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: teeesssst
+        run: echo Hello World
