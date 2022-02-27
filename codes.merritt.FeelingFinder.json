@@ -30,8 +30,8 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://github.com/Merrit/feeling_finder/releases/download/v0.4.0/FeelingFinder-Linux-Portable.tar.gz",
-          "sha256": "76ffe3d0b8dd3bd7efe27d89e5aa3398ee270b6d6d829222fd4b75af93ef6eaa",
+          "url": "https://github.com/Merrit/feeling_finder/releases/download/v0.4.1/FeelingFinder-Linux-Portable.tar.gz",
+          "sha256": "3116c9baa2131c150a81d9b941cf6411b14e8351a32cbdf7d64bfac67505b0c6",
           "tag": null,
           "path": null
         },
@@ -39,7 +39,7 @@
           "type": "git",
           "url": "https://github.com/Merrit/feeling_finder.git",
           "sha256": null,
-          "tag": "v0.4.0",
+          "tag": "v0.4.1",
           "path": null
         },
         {
