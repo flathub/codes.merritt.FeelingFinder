@@ -22,31 +22,21 @@
       ],
       "build-commands": [
         "cp -r packaging/linux/flatpak/build-flatpak.sh .",
-        "cp -r packaging/linux/codes.merritt.FeelingFinder.desktop .",
-        "cp -r assets/images/icon.svg .",
-        "cp -r packaging/linux/flatpak/build-flatpak.sh .",
         "./build-flatpak.sh"
       ],
       "sources": [
         {
           "type": "file",
-          "url": "https://github.com/Merrit/feeling_finder/releases/download/v0.8.0/FeelingFinder-Linux-Portable.tar.gz",
-          "sha256": "78f8bfc2d747427efb9648d437da604babc1ec083a69d14049b9bcaf30b537e6",
-          "tag": null,
-          "path": null
+          "url": "https://github.com/Merrit/feeling_finder/releases/download/v0.8.2/FeelingFinder-Linux-Portable.tar.gz",
+          "sha256": "f8e915e6de99d0c5571c71341b8703e41dbb43485b016e71ea59aaacb2bd1eb4"
         },
         {
           "type": "git",
           "url": "https://github.com/Merrit/feeling_finder.git",
-          "sha256": null,
-          "tag": "v0.8.0",
-          "path": null
+          "tag": "v0.8.2"
         },
         {
           "type": "file",
-          "url": null,
-          "sha256": null,
-          "tag": null,
           "path": "codes.merritt.FeelingFinder.metainfo.xml"
         }
       ]
