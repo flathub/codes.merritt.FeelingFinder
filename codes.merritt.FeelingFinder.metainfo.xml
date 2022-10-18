@@ -41,6 +41,10 @@
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
-    <release version="0.8.0" date="2022-05-26"/>
+    <release version="0.8.2" date="2022-10-18">
+      <description>
+        <p>- Misc minor cleanup</p>
+      </description>
+    </release>
   </releases>
 </component>
