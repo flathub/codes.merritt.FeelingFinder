@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/flatpak/flatpak-builder/main/data/flatpak-manifest.schema.json
+# Reference docs: https://docs.flatpak.org/en/latest/flatpak-builder-command-reference.html#flatpak-manifest
+
+---
+app-id: codes.merritt.FeelingFinder
+runtime: org.freedesktop.Platform
+runtime-version: "22.08"
+sdk: org.freedesktop.Sdk
+command: feeling_finder
+separate-locales: false
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --socket=pulseaudio
+  - --share=network
+modules:
+  # Feeling Finder
+  - name: feeling_finder
+    buildsystem: simple
+    only-arches:
+      - x86_64
+    build-commands:
+      - ./build-flatpak.sh
+    sources:
+      - type: file
+        url: https://github.com/Merrit/feeling_finder/releases/download/v0.9.0/FeelingFinder-Linux-Portable.tar.gz
+        sha256: ae44161fc1456caad82fe18925360423d293826078f5a3760bfe25668054caaa
+      - type: git
+        url: https://github.com/Merrit/feeling_finder.git
+        commit: 9396c8b8fb777642d6ede35bf2875b52a3da7863
+      - type: file
+        path: build-flatpak.sh
