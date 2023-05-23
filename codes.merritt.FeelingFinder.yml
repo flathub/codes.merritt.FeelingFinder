@@ -25,10 +25,10 @@ modules:
       - ./build-flatpak.sh
     sources:
       - type: file
-        url: https://github.com/Merrit/feeling_finder/releases/download/v0.9.0/FeelingFinder-Linux-Portable.tar.gz
-        sha256: ae44161fc1456caad82fe18925360423d293826078f5a3760bfe25668054caaa
+        url: https://github.com/Merrit/feeling_finder/releases/download/v1.0.0/FeelingFinder-Linux-Portable.tar.gz
+        sha256: 3becd28e934c5990210a7a188b67638352e8b8bbd8528cb65f549b4ea8158795
       - type: git
         url: https://github.com/Merrit/feeling_finder.git
-        commit: 9396c8b8fb777642d6ede35bf2875b52a3da7863
+        commit: 5afe3cc8e3d691b93b2ab88dadd8326e8b19df9f
       - type: file
         path: build-flatpak.sh
