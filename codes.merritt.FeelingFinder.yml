@@ -29,6 +29,6 @@ modules:
         sha256: 3becd28e934c5990210a7a188b67638352e8b8bbd8528cb65f549b4ea8158795
       - type: git
         url: https://github.com/Merrit/feeling_finder.git
-        commit: 5afe3cc8e3d691b93b2ab88dadd8326e8b19df9f
+        commit: 8354833c024f3359da4a3df3d8177222162c1996
       - type: file
         path: build-flatpak.sh
