@@ -16,6 +16,8 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
 modules:
+  # libappindicator
+  - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
   # libkeybinder
   - name: keybinder3
     buildsystem: autotools
