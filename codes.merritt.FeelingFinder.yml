@@ -15,6 +15,8 @@ finish-args:
   - --device=dri
   - --socket=pulseaudio
   - --share=network
+  # Tray icon support
+  - --talk-name=org.kde.StatusNotifierWatcher
 modules:
   # libappindicator
   - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
@@ -36,10 +38,10 @@ modules:
       - ./build-flatpak.sh
     sources:
       - type: file
-        url: https://github.com/Merrit/feeling_finder/releases/download/v1.4.2/FeelingFinder-Linux-Portable.tar.gz
-        sha256: d826f5f5c0085f5202dbb165dd6c8aff941a323f4e13d15bf6ed5cd1807286c6
+        url: https://github.com/Merrit/feeling_finder/releases/download/v1.4.3/FeelingFinder-Linux-Portable.tar.gz
+        sha256: a7293fec703147d11ea658d2c80f14e771e0fe48cc2802b83b92410065feeb29
       - type: git
         url: https://github.com/Merrit/feeling_finder.git
-        commit: 2a35930509c9c0d021ebb86d564251d1c755969f
+        commit: fbf32c605556dd19ac40b603946a9efa1261be55
       - type: file
         path: build-flatpak.sh
