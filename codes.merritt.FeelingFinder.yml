@@ -3,9 +3,9 @@
 
 ---
 app-id: codes.merritt.FeelingFinder
-runtime: org.gnome.Platform
-runtime-version: "44"
-sdk: org.gnome.Sdk
+runtime: org.freedesktop.Platform
+runtime-version: "23.08"
+sdk: org.freedesktop.Sdk
 command: feeling_finder
 separate-locales: false
 finish-args:
