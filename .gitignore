@@ -3,3 +3,5 @@
 *.tar.gz
 build-dir
 repo
+# Ignore the extracted files for local builds
+FeelingFinder/
