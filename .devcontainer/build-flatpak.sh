@@ -8,8 +8,8 @@ set -x
 projectId=codes.merritt.FeelingFinder
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --system -y --noninteractive org.gnome.Sdk/x86_64/47
-flatpak install --system -y --noninteractive org.gnome.Platform/x86_64/47
+flatpak install --system -y --noninteractive org.freedesktop.Sdk/x86_64/24.08
+flatpak install --system -y --noninteractive org.freedesktop.Platform/x86_64/24.08
 
 flatpak-builder --force-clean --disable-cache --disable-rofiles-fuse build-dir $projectId.yml --repo=repo
 flatpak build-bundle repo $projectId.flatpak $projectId
