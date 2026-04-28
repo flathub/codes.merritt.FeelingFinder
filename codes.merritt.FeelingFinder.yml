@@ -13,8 +13,6 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
-  - --socket=pulseaudio
-  - --share=network
   # Tray icon support
   - --talk-name=org.kde.StatusNotifierWatcher
 modules:
