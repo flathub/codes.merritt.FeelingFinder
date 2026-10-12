@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Install Flatpak",
+            "type": "shell",
+            "command": "flatpak-builder --user --install --force-clean build-flatpak codes.merritt.FeelingFinder.yml",
+            "problemMatcher": [],
+            "detail": "Build and install Flatpak locally using the manifest",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "Build Flatpak",
+            "type": "shell",
+            "command": "flatpak-builder --force-clean build-flatpak codes.merritt.FeelingFinder.yml",
+            "problemMatcher": [],
+            "detail": "Build Flatpak locally using the manifest",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+    ]
+}
